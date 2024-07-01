@@ -129,7 +129,8 @@ SELECT
     code,
     ROUND(AVG(Number_rabies), 2) avg_rabies,
     ROUND(MAX(Number_rabies), 2) max_rabies,
-    ROUND(MIN(Number_rabies), 2) min_rabies
+    ROUND(MIN(Number_rabies), 2) min_rabies,
+    ROUND(SUM(Number_rabies), 2) sum_rabies
 FROM
 	infection_instances ii
     LEFT JOIN entities e
